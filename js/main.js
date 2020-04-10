@@ -297,3 +297,48 @@ $(document).ready(function(){
 		modal.removeClass('modal3_active3');
 	});
 });
+
+
+
+
+
+$(document).ready(function(){
+	var button = $('#polinicy__button');
+	var modal = $('#modal4');
+	var close = $('#close4');
+	
+	button.on('click', function() {
+		modal.addClass('modal4_active4');
+	});
+
+	close.on('click', function() {
+		modal.removeClass('modal4_active4');
+	});
+});
+
+
+$(document).ready(function(){
+	var button = $('#polinicy_questions__button');
+	var modal = $('#modal4');
+	var close = $('#close4');
+	
+	button.on('click', function() {
+		modal.addClass('modal4_active4');
+	});
+
+	close.on('click', function() {
+		modal.removeClass('modal4_active4');
+	});
+});
+
+
+
+
+function init() {
+	var myMap = new ymaps.Map('map', {
+	center: [55.76, 37.64],
+	zoom: 10
+	})
+	myMap.behaviors.disable('scrollZoom');
+	myMap.behaviors.disable('drag');
+}
