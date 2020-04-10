@@ -2,7 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="theme-color" content="#454bb2" />
+    <meta name="msapplication-navbutton-color" content="#454bb2" />
     <title>Внедрение и настройка CRM в Челябинске - 14 дней бесплатно </title>
     <meta name="description" content="Subpro компания по внедрению высокоэффективных CRM систем от 19 900руб. Бесплатная консультация и подбор. Расчитай точную стоимость на сайте"/>
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
@@ -486,15 +488,8 @@
                 </div>
             </div>
 
+            <button class="button questions__button" id="questions__button">Задать вопрос</button>
 
-            <div class="questions_form">
-                <form action="">
-
-                    <textarea placeholder="Напишите свой вопрос" name="" id="" cols="50" rows="6"></textarea>
-
-                    <button class="button questions__button">Отправить</button>
-                </form>
-            </div>
 
         </div>
         <!-- /.container -->
@@ -558,15 +553,15 @@
                     </div>
                 </div>
                 <div class="social">
-                    <div class="social__item">
+                    <a href="https://www.youtube.com/channel/UCkJw31cMspG2VdrSyk5TEXA/featured" class="social__item">
                         <img class="youtube" src="img/footer/youtube.png" alt="">
-                    </div>
-                    <div class="social__item">
+                    </a>
+                    <a href="https://www.instagram.com/sabproit/" class="social__item">
                         <img src="img/footer/instagram.png" alt="">
-                    </div>
-                    <div class="social__item">
+                    </a>
+                    <a href="https://vk.com/sabproit" class="social__item">
                         <img src="img/footer/vk.png" alt="">
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -582,7 +577,7 @@
                 <input type="text" class="modal-dialog__input" name="user_name" placeholder="Ваше имя">
                 <input type="e-mail" class="modal-dialog__input" name="user_email" placeholder="Ваш E-mail">
                 <input type="tell" class="modal-dialog__input" name="user_phone" placeholder="Ваш телефон">
-                <input type="submit" class="button maodal-dialog__button">Отправить</input>
+                <button type="submit" class="button maodal-dialog__button">Отправить</button>
             </form>
         </div> 
     </div>
@@ -598,7 +593,19 @@
     </div>    
 
 
-
+    <div class="modal3" id="modal3">
+        <div class="modal-dialog3">
+            <button class="modal-dialog__close3" id="close3"></button>
+            <div class="questions_form">
+                <div class="modal-dialog__title3">Задайте вопрос</div>
+                <form action="" class="questions_modal__form">
+                    <input class="modal-dialog__input" type="email" placeholder="Ваш E-mail">
+                    <textarea placeholder="Напишите свой вопрос" id="textarea" cols="50" rows="6"></textarea>
+                    <button class="button questions_modal__button" id="questions_modal__button">Отправить</button>
+                </form>
+            </div>
+        </div> 
+    </div>    
 
 
     <script

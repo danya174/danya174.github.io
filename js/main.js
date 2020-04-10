@@ -261,3 +261,39 @@ $(document).ready(function(){
 		modal.removeClass('modal2_active2');
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+	var button = $('#questions__button');
+	var modal = $('#modal3');
+	var close = $('#close3');
+	
+	button.on('click', function() {
+		modal.addClass('modal3_active3');
+	});
+
+	close.on('click', function() {
+		modal.removeClass('modal3_active3');
+	});
+});
