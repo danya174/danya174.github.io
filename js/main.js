@@ -1,131 +1,40 @@
-document.querySelectorAll(".v-shadow").forEach(function(el) {
-	el.style.position = "relative"
-	
-	const video = el.getElementsByTagName("video")[0]
-	const videoClone = video.cloneNode(true)
-	const videoTime = video.currentTime
-	const cloneDisplay = el.querySelectorAll(".v-clone")[0]
-	const blurValue = video.getAttribute("data-blur")
-	
-	cloneDisplay.appendChild(videoClone)
-	
-	videoClone.volume = 0
-	videoClone.removeAttribute("controls")
-  
-	video.addEventListener("playing", event => {
-	  videoClone.play()
-	})
-  
-	video.addEventListener("pause", event => {
-	  videoClone.pause()
-	})
-	
-	video.addEventListener("timeupdate", event => {
-	  videoClone.currentTime = video.currentTime
-	})
-	  
-	const styles = {
-	  WebkitFilter: `blur(${blurValue}px)`,
-	  position: "absolute",
-	  bottom: "-10%",
-	  left: "5%",
-	  width: "90%",
-	  height: "95%",
-	  zIndex: "-1"
-	}
-  
-	Object.keys(styles).forEach(function(key) {
-	  videoClone.style[key] = styles[key]
-	})
-})
-
-
-
-
-
-
-
-
-
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$('.menu-btn').on('click', function(e) {
-	e.preventDefault();
-	$('.menu').toggleClass('menu_active');
-	$('.content').toggleClass('content_active');
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Слайдеры портфолио
+$(document).ready(function() {
+  $('.portfolio__foto_img-1').slick({
+    prevArrow: $('.arrows__left-1'),
+    nextArrow: $('.arrows__right-1')
+  });
+});
+
+$(document).ready(function() {
+  $('.portfolio__foto_img-2').slick({
+    prevArrow: $('.arrows__left-2'),
+    nextArrow: $('.arrows__right-2')
+  });
+});
+
+$(document).ready(function() {
+  $('.portfolio__foto_img-3').slick({
+    prevArrow: $('.arrows__left-3'),
+    nextArrow: $('.arrows__right-3')
+  });
+});
+
+$(document).ready(function() {
+  $('.portfolio__foto_img-4').slick({
+    prevArrow: $('.arrows__left-4'),
+    nextArrow: $('.arrows__right-4')
+  });
+});
+
+$(document).ready(function() {
+  $('.portfolio__foto_img-5').slick({
+    prevArrow: $('.arrows__left-5'),
+    nextArrow: $('.arrows__right-5')
+  });
+});
+
+// Модальное окно
 $(document).ready(function(){
 	var button = $('#button');
 	var modal = $('#modal');
@@ -139,206 +48,3 @@ $(document).ready(function(){
 		modal.removeClass('modal_active');
 	});
 });
-
-
-
-
-
-$(document).ready(function(){
-	var button = $('#contacts__button');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-
-
-$(document).ready(function(){
-	var button = $('#graphics__button');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-$(document).ready(function(){
-	var button = $('#graphics__button2');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-
-$(document).ready(function(){
-	var button = $('#graphics__button3');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-
-$(document).ready(function(){
-	var button = $('#graphics__button4');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-$(document).ready(function(){
-	var button = $('#content__button');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-$(document).ready(function(){
-	var button = $('#content__button2');
-	var modal = $('#modal');
-	var close = $('#close');
-	
-	button.on('click', function() {
-		modal.addClass('modal_active');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal_active');
-	});
-});
-
-
-
-$(document).ready(function(){
-	var button = $('#hero_video');
-	var modal = $('#modal2');
-	var close = $('#close2');
-	
-	button.on('click', function() {
-		modal.addClass('modal2_active2');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal2_active2');
-	});
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(document).ready(function(){
-	var button = $('#questions__button');
-	var modal = $('#modal3');
-	var close = $('#close3');
-	
-	button.on('click', function() {
-		modal.addClass('modal3_active3');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal3_active3');
-	});
-});
-
-
-
-
-
-$(document).ready(function(){
-	var button = $('#polinicy__button');
-	var modal = $('#modal4');
-	var close = $('#close4');
-	
-	button.on('click', function() {
-		modal.addClass('modal4_active4');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal4_active4');
-	});
-});
-
-
-$(document).ready(function(){
-	var button = $('#polinicy_questions__button');
-	var modal = $('#modal4');
-	var close = $('#close4');
-	
-	button.on('click', function() {
-		modal.addClass('modal4_active4');
-	});
-
-	close.on('click', function() {
-		modal.removeClass('modal4_active4');
-	});
-});
-
-
-
-
-function init() {
-	var myMap = new ymaps.Map('map', {
-	center: [55.76, 37.64],
-	zoom: 10
-	})
-	myMap.behaviors.disable('scrollZoom');
-	myMap.behaviors.disable('drag');
-}

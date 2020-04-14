@@ -1,674 +1,359 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="theme-color" content="#454bb2" />
-    <meta name="msapplication-navbutton-color" content="#454bb2" />
-    <title>Внедрение и настройка CRM в Челябинске - 14 дней бесплатно </title>
-    <meta name="description" content="Subpro компания по внедрению высокоэффективных CRM систем от 19 900руб. Бесплатная консультация и подбор. Расчитай точную стоимость на сайте"/>
-    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
-    <link rel="icon" type='image/x-icon' href="//u20.filesonload.ru/eabf235d622ac9326087a1bb2169d769/af9625d28d832cebfd98e1502b42e9dd.ico">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
-
-    <div class="wrapper">
-        <div class="menu">
-            <a class="menu-btn"></a>
-            <nav class="menu-list">
-                <a href="#header">Главная</a>
-                <a href="#advantages">Преимущества</a>
-                <a href="#systems">Услуги</a>
-                <a href="#documents">Мы эксперты</a>
-                <a href="#examples">Как это работает</a>
-                <a href="#team">Наша команда</a>
-                <a href="#portfolio">Отзывы</a>
-                <a href="#questions">Вопросы</a>
-                <a href="#contacts">Контакты</a>
-            </nav>
+  <header class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar__logo">ELDAR<br><span>G I R F</span></div>
+        <div class="navbar__social">
+          <div class="navbar__social_item">
+            <img src="img/header/whatsapp.png" alt="whatsapp">
+          </div>
+          <div class="navbar__social_item">
+            <a href="https://www.instagram.com/eldargirf.photo/">
+              <img src="img/header/instagram.png" alt="instagram">
+            </a>
+          </div>
+          <div class="navbar__social_item">
+            <a href="https://vk.com/pheldargirf">
+              <img src="img/header/vk.png" alt="vk">
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-content__offer">
+            <div class="hero-content__offer_title">Запишись на фотосессию и получи три бесплатных фото</div>
+            <div class="hero-content__offer_subtitle">При записи от трех часов, один час беплатно</div>
+          </div>
+          <div class="hero-content__advantages">
+            <div class="hero-content__advantages_item">
+              <img src="img/header/money.png" alt="">
+              <div class="hero-advantage__text"><p>от 1500руб/час</p></div>
+            </div>
+            <div class="hero-content__advantages_item">
+              <img src="img/header/girl.png" alt="">
+              <div class="hero-advantage__text"><p>Десятки счастливых клиентов</p></div>
+            </div>
+          </div>
+          <button class="button hero-button" id="button">Записаться на фотосессию</button>
+        </div>
+        <div class="hero__img">
+          <img src="img/header/photographer.png" alt="photographer" class="hero__img__photographer">
+        </div>
+      </div>
+      <div class="transition-clouds-bottom">
+        <img src="img/header/clouds.png" alt="clouds">
+      </div>
     </div>
+  </header>
 
 
 
 
 
-
-
-    <header class="header" id="header">
-        <div class="container header_container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="img/header/logo.png" alt="logo">
-                </div>
-                <div class="phone">
-                    <i class="fa fa-phone fa-rotate-90 faphone" aria-hidden="true"></i>
-                    +7 958 756 95 93
-                </div>
-            </div>
-
-            <div class="hero">
-                <div class="hero_offer wow fadeInLeft">
-                    <h1>
-                        Подберем и внедрим CRM систему,
-                        как это сделали для 160 компаний 
-                        и  увеличим продажи на  30%,  
-                        уже в первый месяц
-                    </h1>
-                    <div class="hero_subtitle">
-                        Бесплатно обучим сотрудников пользоваться
-                        CRM системой и дадим чек-лист с рекомендацими
-                        от  наших клиентов
-                    </div>
-                </div>
-                <div class="hero_img wow fadeInRight">
-                    <img src="img/header/hero-img.png" alt="hero-img">
-                </div>
-                <div class="hero_buttons">
-                    <div class="hero_video" id="hero_video">
-                        <div class="video_button">
-                            <img src="img/header/play.png" alt="play">
-                        </div>
-                        <div class="video_text">
-                            3 способа внедрить  CRM 
-                            и увеличить продажи на 30% 
-                            в первый месяц
-                        </div>
-                    </div>
-                    <button class="button hero_button" id="button">Получить консультацию</button>
-                </div>
-            </div>
-            <!-- /.hero -->
-        </div>
-        <!-- /.container -->
-    </header>
-    <!-- /.header -->
-    <section class="advantages" id="advantages">
-        <div class="container">
-            <div class="advantages_title">
-                <h2 class="wow fadeInLeft">Наши преимущества</h2>
-            </div>
-            
-            <div class="advantages_wrap">
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">1</div>
-                    <div class="item_content">
-                        <div class="advantages_item__title">Внедрили > 160 CRM</div>
-                        <div class="advantages_item__text">Нашими услугами воспользовались
-                                                        более 150 компаний малого 
-                                                        и среднего бизнеса</div>
-                    </div>
-                </div>   
-                
-                
-
-
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">2</div>
-                    <div class="item_content">
-                        <div class="advantages_item__title">Опыт работы 4 года</div>
-                        <div class="advantages_item__text">Опыт работы 4 года.
-                                                           Входим в топ 8 интеграторов
-                                                           Российской Федирации.</div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">3</div>
-                    <div class="item_content">
-                        <div class="advantages_item__title">Обучаем пользоваться CRM</div>
-                        <div class="advantages_item__text">Бесплатно обучаем руководителей
-                                                           и сотрудников пользоваться crm</div>
-                    </div>
-                </div>
-
-
-
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">4</div>
-                        <div class="item_content">
-                            <div class="advantages_item__title">Профессиональная команда</div>
-                            <div class="advantages_item__text">Собрана команда исключительно
-                                                            профессионалов которые знают 
-                                                            свою работу.</div>
-                        </div>
-                </div>
-
-
-
-
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">5</div>
-                    <div class="item_content">
-                        <div class="advantages_item__title">Подберем CRM</div>
-                        <div class="advantages_item__text">Бесплатно проконсультируем 
-                                                        и подберем ту CRM, которая 
-                                                        подходит именно вашей компании</div>
-                    </div>
-                </div>
-
-
-
-                <div class="advantages_item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="advantages_item__number">6</div>
-                    <div class="item_content">
-                        <div class="advantages_item__title">Гарантия</div>
-                        <div class="advantages_item__text">Даем гарантия на услуги
-                                                        1 год и техподдержку 
-                                                        в первый месяц</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="systems" id="systems">
-        <div class="container">
-            <div class="sestems_wrap">
-                <div class="systems_block">
-                    <div class="systems_block_graphics">
-                        <div class="graphics-img">
-                            <img src="img/systems/amo.png" alt="amoCRM">
-                        </div>
-                        <button class="button graphics__button" id="graphics__button">Получить презентацию</button>
-                    </div>
-                    <div class="systems_block_content">
-                        <div class="content__title">Решение только для отдела продаж</div>
-                        <div class="content__subtitle">Перестаньте терять клиентов</div>
-                        <div class="content__text">
-                            <p>По статистике, компании, не использующие CRM,
-                               теряют до 50% потенциальных продаж</p>
-                            <p>
-                                Попробуйте amoCRM – начните 
-                                продавать больше уже сейчас!
-                            </p>    
-                        </div>
-                        <div class="content__button" id="content__button">
-                            <a>Чек лист 95 шагов внедрению AMO</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="systems_block">
-                    <div class="systems_block_graphics">
-                        <div class="graphics-img">
-                            <img src="img/systems/bitrix.png" alt="bitrix24">
-                        </div>
-                        <button class="button graphics__button" id="graphics__button2">Получить презентацию</button>
-                    </div>
-                    <div class="systems_block_content">
-                        <div class="content__title">Решение для автоматизации всей компании</div>
-                        <div class="content__subtitle">Наведите порядок в компании</div>
-                        <div class="content__text">
-                            <p>
-                                Избавьтесь  от Екселя, хаоса  и рутинных задач 
-                                в Вашем бизнесе.
-                            </p>
-                            <p>
-                                Управление бизнесом онлайн - все в одном месте:
-                                офис, задачи и проекты, контакт-центр, сайты и магазины.
-                                Освободите свое время на стратегические задачи прямо сейчас!
-                            </p>
-                        </div>
-                        <div class="content__button" id="content__button2">
-                            <a>Чек лист 95 шагов внедрению Битрикс 24</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="systems_block">
-                    <div class="systems_block_graphics">
-                        <div class="graphics-img">
-                            <img src="img/systems/y.png" alt="YCLIENTS">
-                        </div>
-                        <button class="button graphics__button" id="graphics__button3">Получить презентацию</button>
-                    </div>
-                    <div class="systems_block_content">
-                        <div class="content__title">Решение отраслевое для барбершопов,
-                                                    салонов красоты, частные школы</div>
-                        <div class="content__subtitle">Будьте лучшим в своей сфере</div>
-                        <div class="content__text">
-                            <p>
-                                YCLIENTS — сервис онлайн-записи и платформа автоматизации 
-                                для сферы услуг: автоматизация оналйн кассы, складской учет 
-                                и удобный расчет заработной платы в одном месте!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="systems_block">
-                    <div class="systems_block_graphics">
-                        <div class="graphics-img">
-                            <img src="img/systems/retail.png" alt="retail">
-                        </div>
-                        <button class="button graphics__button" id="graphics__button4">Получить презентацию</button>
-                    </div>
-                    <div class="systems_block_content">
-                        <div class="content__title">Решение для интернет торговли 
-                                                    и электронной коммерции</div>
-                        <div class="content__subtitle">Автоматизируйте свой онлайн бизнес</div>
-                        <div class="content__text">
-                            <p>
-                                retailCRM — система поможет вашему интернет-магазину 
-                                быстрее обрабатывать заказы и обращения, автоматизировать 
-                                маркетинг и анализировать результаты. Попробуйте сейчас!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="documents" id="documents">
-        <div class="container">
-            <h2>Мы официальные партнеры</h2>
-            <div class="documents_wrap">
-                <div class="document docoment-1 wow fadeInUp" data-wow-delay="0.2s"><img src="img/documents/amos.png" alt=""></div>
-                <div class="document docoment-2 wow fadeInUp" data-wow-delay="0.4s"><img src="img/documents/bitrix.png" alt=""></div>
-                <div class="document docoment-3 wow fadeInUp" data-wow-delay="0.6s"><img src="img/documents/ys.png" alt=""></div>
-                <div class="document docoment-4 wow fadeInUp" data-wow-delay="0.8s"><img src="img/documents/sipunis.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="examples" id="examples">
-        <div class="container">
-            <div class="title">
-                <h2 class="examples_title">Как это работает</h2>
-                <div class="examples__subtitle">на примере AmoCRM?</div>
-            </div>
-            <div class="containerr">
-                <div class="video-review">
-                    <div class="video__title">Обзор возможнастей</div>
-                    <div class="v-shadow">
-                        <video data-blur="20" controls poster="video/poster/poster-review.jpg">
-                        <source src="/video/review.mp4">
-                        </video>
-                    
-                        <div class="v-clone"></div>
-                      </div>
-                </div>
-                
-                <div class="video-demonstration">
-                    <div class="video__title">Результат внедрения</div>
-                    <div class="v-shadow">
-                        <video data-blur="20" controls poster="video/poster/poster-demon.jpg">
-                        <source src="video/demonstration.mp4">
-                        </video>
-                    
-                        <div class="v-clone"></div>
-                      </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="team" id="team">
-        <div class="container">
-            <h2>Наша команда</h2>
-            <div class="team_wrap">
-                <div class="person wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="person_img"><img class="nurlan" src="img/team/nurlan.png" alt=""></div>
-                    <div class="person_content">
-                        <div class="person_content__title">Салаватов Нурлан</div>
-                        <div class="person_content__p">
-                            <p>Руководитель компании</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="person wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="person_img"><img src="img/team/kanat.png" alt=""></div>
-                    <div class="person_content">
-                        <div class="person_content__title">Байбачинов Канат</div>
-                        <div class="person_content__p">
-                            <p>Старший системный <br>
-                                аналитик</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="person wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="person_img"><img src="img/team/victoria.png" alt=""></div>
-                    <div class="person_content">
-                        <div class="person_content__title">Озерова Виктория</div>
-                        <div class="person_content__p">
-                            <p>HR. Кладоискатель <br>
-                                персонала</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="person wow fadeInUp" data-wow-delay="0.8s">
-                    <div class="person_img"><img src="img/team/alexandr.png" alt=""></div>
-                    <div class="person_content">
-                        <div class="person_content__title">Ермолаев Александр</div>
-                        <div class="person_content__p">
-                            <p>Руководит продажами</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="portfolio__title">Наши клиенты и их отзывы</h2>
-
-            <div class="slider">
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/Приоритет.jpg" alt="">
-                        <div class="slider__title">ООО Приоритет</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/want.jpg" alt="">
-                        <div class="slider__title">ООО ХочуЛазать</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/strateg.jpg" alt="">
-                        <div class="slider__title">ООО АльянсСтратег</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/znak.png" alt="">
-                        <div class="slider__title">ООО ГК ЗНАК</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/LSG.jpg" alt="">
-                        <div class="slider__title">ООО LSG</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <div class="slider__content">
-                        <img class="slider__image" src="img/reviews/inform.jpg" alt="">
-                        <div class="slider__title">ООО ИНФО РЕШЕНИЯ</div>
-                        <p class="slider__text">
-                            retailCRM — система поможет вашему 
-                            интернет-магазинубыстрее обрабатывать 
-                            заказы и обращения, автоматизировать 
-                            маркетинг и анализировать результаты. 
-                            Попробуйте сейчас!
-                        </p>
-                    </div>
-                </div>
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="section__title">Мое портфолио</h2>
+      <div class="portfolio__blocks">
+        <div class="portfolio__blocks_item">
+          <div class="portfolio__foto">
+            <div class="portfolio__foto_img portfolio__foto_img-1">
+              <img src="img/portfolio/individual.jpg" alt="">
+              <img src="img/portfolio/individual.jpg" alt="">
             </div>
             <div class="arrows portfolio__arrows">
-                <div class="arrows__left">
-                    <img src="img/reviews/left-arrow.png" alt="">
-                </div>
-                <div class="arrows__right">
-                    <img src="img/reviews/right-arrow.png" alt="">
-                </div>
+              <div class="arrows__left-1"><img src="img/portfolio/back-arrow.png" alt=""></div>
+              <div class="arrows__right-1"><img src="img/portfolio/next-arrow.png" alt=""></div>
             </div>
-
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__content_title">Индивидуальная фотосъемка</div>
+            <div class="portfolio__content_subtitle">2000 руб/час</div>
+          </div>
         </div>
-    </section>
-
-    <section class="questions" id="questions">
-        <div class="container">
-            <h2>Частые вопросы</h2>
-            <div class="accordion_wrap">
-                <button class="accordion">Сложно ли пользоваться CRM системой?</button>
-                <div class="panel">
-                    <p>Пользоваться CRM системой не сложно, да и к тому же мы обучим ей пользоваться и вы не будите испытывать трудности при работе</p>
-                </div>
+        <div class="portfolio__blocks_item">
+          <div class="portfolio__foto">
+            <div class="portfolio__foto_img portfolio__foto_img-2">
+              <img src="img/portfolio/love_story.jpg" alt="">
+              <img src="img/portfolio/love_story.jpg" alt="">
             </div>
-            
-
-            <div class="accordion_wrap">
-                <button class="accordion">Что входит в стоимость?</button>
-                <div class="panel">
-                    <p>В стоимость входит консультация, выбор, внедрение и настройка CRM системы. Плюсом вы получаите обучение по использованию, гарантию 1 год и чек-лист с рекомендациями.</p>
-                </div>
+            <div class="arrows portfolio__arrows ">
+              <div class="arrows__left-2"><img src="img/portfolio/back-arrow.png" alt=""></div>
+              <div class="arrows__right-2"><img src="img/portfolio/next-arrow.png" alt=""></div>
             </div>
-            
-
-            <div class="accordion_wrap">
-                <button class="accordion">Какой эффект от внедрения CRM системы?</button>
-                <div class="panel">
-                    <p>Увеличение прибыли уже в первый месяц, снижение риска потери клиентов и ухудшения отношений с ними, повышение производительности и эффективности процессов, снижение расходов и рост количества выиграных сделок</p>
-                </div>
-            </div>
-
-            <button class="button questions__button" id="questions__button">Задать вопрос</button>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__content_title">Love story</div>
+            <div class="portfolio__content_subtitle">2000 руб/час</div>
+          </div>
         </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.questions -->
-
-    <section id="contacts">
-        <div class="container">
-            <div class="contacts_content">
-                <div class="contacts-block">
-                    <div class="contacts">
-                        <h2 class="contacts__title">Контакты</h2>
-                        <ul class="contacts-list">
-                            <li class="contacts-list__item">
-                                <span class="contacts-list__icon">
-                                    <img src="img/contacts/clock.svg" alt="">
-                                </span>
-                                <span class="contacts-list__text">С 9 утра до 20 вечера</span>
-                            </li>
-                            <li class="contacts-list__item">
-                                <span class="contacts-list__icon">
-                                    <img src="img/contacts/phone.svg" alt="">
-                                </span>
-                                <span class="contacts-list__text">+7 (958) 756-95-93</span>
-                            </li>
-                            <li class="contacts-list__item">
-                                <span class="contacts-list__icon">
-                                    <img src="img/contacts/mail.svg" alt="">
-                                </span>
-                                <span class="contacts-list__text">crm@sabpro.ru</span>
-                            </li>
-                            <li class="contacts-list__item">
-                                <span class="contacts-list__icon">
-                                    <img src="img/contacts/map.svg" alt="">
-                                </span>
-                                <span class="contacts-list__text">Челябинск проспект Героя <br>
-                                    России Евгения Родионова, д.13</span>
-                            </li>
-                        </ul>
-                        <button class="button contacts__button" id="contacts__button">Оставить заявку</button>
-                    </div>
-                </div>
+        <div class="portfolio__blocks_item">
+          <div class="portfolio__foto">
+            <div class="portfolio__foto_img portfolio__foto_img-3">
+              <img src="img/portfolio/events.jpg" alt="">
+              <img src="img/portfolio/events.jpg" alt="">
             </div>
-        </div>
-
-        <div class="map" id="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3efb29fba22255cde9dd33be3f6fd28be08663036846a5f33e53a1cd802fe3b4&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer_wrap">
-                <div class="footer_content">
-                    <div class="logo footer__logo">
-                        <img class="www" src="img/footer/logo.png" alt="">
-                    </div>
-                    <div class="footer__text">
-                        ИП Салаватов Нурлан Кадиржанович <br>
-                        ОГРН 319745600050458 ИНН 744301788482
-                    </div>
-                </div>
-                <div class="social">
-                    <a href="https://www.youtube.com/channel/UCkJw31cMspG2VdrSyk5TEXA/featured" class="social__item">
-                        <img class="youtube" src="img/footer/youtube.png" alt="">
-                    </a>
-                    <a href="https://www.instagram.com/sabproit/" class="social__item">
-                        <img src="img/footer/instagram.png" alt="">
-                    </a>
-                    <a href="https://vk.com/sabproit" class="social__item">
-                        <img src="img/footer/vk.png" alt="">
-                    </a>
-                </div>
+            <div class="arrows portfolio__arrows ">
+              <div class="arrows__left-3"><img src="img/portfolio/back-arrow.png" alt=""></div>
+              <div class="arrows__right-3"><img src="img/portfolio/next-arrow.png" alt=""></div>
             </div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__content_title">Мероприятия</div>
+            <div class="portfolio__content_subtitle">1500 руб/час</div>
+          </div>
         </div>
-    </footer>
-
-
-
-    <div class="modal" id="modal">
-        <div class="modal-dialog">
-            <button class="modal-dialog__close" id="close"></button>
-            <div class="modal-dialog__title">Заполните данные</div>
-            <form action="mail.php" method="POST">
-                <input type="text" class="modal-dialog__input" name="user_name" placeholder="Ваше имя">
-                <input type="e-mail" class="modal-dialog__input" name="user_email" placeholder="Ваш E-mail">
-                <input type="tell" class="modal-dialog__input" name="user_phone" placeholder="Ваш телефон">
-                <button type="submit" class="button maodal-dialog__button">Отправить</button>
-                <div class="form__policy">
-                    <input id="radio-12" type="checkbox" class="form__radio" checked disabled>
-                    <label for="radio-12" class="form__radio-label">
-                        <p class="form__policy-text">Я принимаю условия <a id="polinicy__button">передачи информации</a></p>
-                    </label>
-                </div>
-            </form>
-        </div> 
+        <div class="portfolio__blocks_item">
+          <div class="portfolio__foto">
+            <div class="portfolio__foto_img portfolio__foto_img-4">
+              <img src="img/portfolio/children.jpg" alt="">
+              <img src="img/portfolio/children.jpg" alt="">
+            </div>
+            <div class="arrows portfolio__arrows ">
+              <div class="arrows__left-4"><img src="img/portfolio/back-arrow.png" alt=""></div>
+              <div class="arrows__right-4"><img src="img/portfolio/next-arrow.png" alt=""></div>
+            </div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__content_title">Детская фотосессия</div>
+            <div class="portfolio__content_subtitle">2000 руб/час</div>
+          </div>
+        </div>
+        <div class="portfolio__blocks_item">
+          <div class="portfolio__foto">
+            <div class="portfolio__foto_img portfolio__foto_img-5">
+              <img src="img/portfolio/object.jpg" alt="">
+              <img src="img/portfolio/object.jpg" alt="">
+            </div>
+            <div class="arrows portfolio__arrows ">
+              <div class="arrows__left-5"><img src="img/portfolio/back-arrow.png" alt=""></div>
+              <div class="arrows__right-5"><img src="img/portfolio/next-arrow.png" alt=""></div>
+            </div>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__content_title">Предметная фотосессия</div>
+            <div class="portfolio__content_subtitle">1500 руб/час</div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
 
-    <div class="modal2" id="modal2">
-        <div class="modal-dialog2">
-            <button class="modal-dialog__close2" id="close2"></button>
-            <div class="thumb-wrap">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/7dzuoIeWi6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-        </div> 
-    </div>    
 
 
-    <div class="modal3" id="modal3">
-        <div class="modal-dialog3">
-            <button class="modal-dialog__close3" id="close3"></button>
-            <div class="questions_form">
-                <div class="modal-dialog__title3">Задайте вопрос</div>
-                <form action="" class="questions_modal__form">
-                    <input class="modal-dialog__input" type="email" placeholder="Ваш E-mail">
-                    <textarea placeholder="Напишите свой вопрос" id="textarea" cols="50" rows="6"></textarea>
-                    <button class="button questions_modal__button" id="questions_modal__button">Отправить</button>
-                </form>
-                <div class="form__policy">
-                    <input id="radio-12" type="checkbox" class="form__radio" checked disabled>
-                    <label for="radio-12" class="form__radio-label">
-                        <p class="form__policy-text">Я принимаю условия <a id="polinicy_questions__button">передачи информации</a></p>
-                    </label>
-                </div>
-            </div>
-        </div> 
-    </div>    
+
+  <section class="advantages">
+    <div class="transition-clouds-top">
+      <img src="img/advantages/clouds-top.png" alt="clouds">
+    </div>
+    <div class="container">
+      <h2 class="section__title">Почему мне доверяют</h2>
+      <div class="advantages__wrap">
+        <div class="advantages__block">
+          <img src="img/advantages/advantages1.png" alt="">
+          <div class="text">Я фотогрофирую уже более трех лет,и за это время научился понимать чтонужно клиентам</div>
+        </div>
+        <div class="advantages__block">
+          <img src="img/advantages/advantages2.png" alt="">
+          <div class="text">На моем счету уже десятки довольных клиентов</div>
+        </div>
+        <div class="advantages__block">
+          <img src="img/advantages/advantages3.png" alt="">
+          <div class="text">Мои фото не чуть не уступают тем, которые сделаны в профессональной фото-студии, но стоят в несколько раз дешевле</div>
+        </div>
+        <div class="advantages__block">
+          <img src="img/advantages/advantages4.png" alt="">
+          <div class="text">Помогу с выбором одежды, "как встать", если нужно подскажу визажиста и парикмахера. Совместно выберем локацию</div>
+        </div>
+      </div>
+    </div>
+    <div class="transition-clouds-bottom">
+      <img src="img/header/clouds.png" alt="clouds">
+    </div>
+  </section>
 
 
-    <div class="modal4" id="modal4">
-        <div class="modal-dialog4">
-            <button class="modal-dialog__close4" id="close4"></button>
-            <div class="popup-policy">
-                <div class="popup__content">
-                    <div class="title_m title_blue-2 popup__title"><b>Политика конфиденциальности</b></div>
-                    <div class="popup-policy__text">
-                        <p>Данная Политика конфиденциальности применима к данному Сайту. После просмотра данного Сайта обязательно прочитайте текст, содержащий политику конфиденциальности используемого сайта. В случае несогласия с данной Политикой конфиденциальности прекратите использование данного Сайта. Заполнив любую из форм и используя данный Сайт, Вы тем самым выражаете согласие с условиями изложенной ниже Политики конфиденциальности. Сайт охраняет конфиденциальность посетителей сайта. Персональная информация Для того чтобы оказывать вам услуги, отвечать на вопросы, выполнять ваши пожелания и требования требуется такая информация, как ваше имя и номер телефона. САЙТ может использовать указанную информацию для ответов на запросы, а также для связи с Вами по телефону с целью предоставления информации о предлагаемых САЙТ услугах и рекламных кампаниях. При поступлении от вас обращения в виде отправки любой заполненной на сайте формы САЙТ может потребоваться связаться с Вами для получения дополнительной информации, необходимой для вашего обслуживания и ответа на интересующие вопросы. САЙТ обязуется не передавать данную информацию третьим лицам без Вашего разрешения, за исключением информации, необходимой для выполнения вашего обслуживания. Со своей стороны, Вы предоставляете САЙТ право использовать любую сообщѐнную Вами информацию для выполнения указанных выше действий.</p>
-                        <p><b>Безопасность</b>
-                            <br>
-                            Передача персональных данных в любой форме (лично, по телефону или через Интернет) всегда связана с определенным риском, поскольку не существует абсолютно надежных (защищенных от злонамеренных посягательств) систем, однако САЙТ принимает необходимые адекватные меры для минимизации риска и предотвращения несанкционированного доступа, несанкционированного использования и искажения Ваших персональных данных. Несовершеннолетние САЙТ не принимает никакой информации от лиц моложе 18 лет без согласия их родителей или законных опекунов. Кроме того, лица моложе 18 лет не могут совершать каких-либо покупок или иных юридических действий на данном Сайте без согласия родителей или законных опекунов, если это не допускается законодательством Российской Федерации.
-                        </p>
-                        <p><b>Модификация</b>
-                            <br>
-                            САЙТ имеет право изменять данную Политику конфиденциальности, изменять и корректировать условия доступа или запрещать доступ к сайту, а также изменять его содержание в любое время без предварительного уведомления.
-                        </p>                        
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>  
 
 
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous">
-    </script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-        $(document).ready(function() {
-            $('.slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                prevArrow: $('.arrows__left'),
-                nextArrow: $('.arrows__right'),	
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 3,
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });
-    </script>
-    <script src="js/main.js"></script>
-    
+  <section class="about-me">
+    <div class="container">
+      <h2 class="section__title">Коротко обо мне</h2>
+      <div class="about-me__wrap">
+        <div class="about-me__text">
+          <p>
+            Меня зовут Эльдар Гирфанов, я предлагаю 
+            услуги фотографа в Челябинске и Копейске.
+            До того как я взял в руки фотик, я очень 
+            любил фотографировать на телефон 
+            природные пейзажи и людей.
+            После, я случайно попал на фотосессию 
+            к одному замечательному фотографу и тогда 
+            у меня появился более профессиональный 
+            интерес к фото и я стал посвящать этому все 
+            свое время.
+            Каждое фото для меня – это всегда новые 
+            образы со своим характером, настроением 
+            и атмосферой. 
+          </p>
+        </div>
+        <div class="about-me__img">
+          <img src="img/about-me/me.png" alt="me">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="reviews">
+    <div class="transition-clouds-top">
+      <img src="img/advantages/clouds-top.png" alt="clouds">
+    </div>
+    <div class="container">
+      <h2 class="section__title">Отзывы</h2>
+      <div class="reviews__wrap">
+        <div class="reviews__block">
+          <div class="reviews__content">
+            <div class="reviews__title">Анна</div>
+            <div class="reviews__text">Эльдар, ты просто большой молодец, а твои фотографии и идеи просто восхитительны. Спасибо большое за такую интересную прогулку и волшебные снимки</div>
+            <div class="reviews__img"><img src="img/reviews/anna.png" alt=""></div>
+          </div>
+        </div>
+        <div class="reviews__block">
+          <div class="reviews__content">
+            <div class="reviews__title">Наталья</div>
+            <div class="reviews__text">Знаешь, у нас с тобой было две фотосессии и с каждым разом мне все больше нравится быть на съемочной площадке. Потому что, это не просто хорошая твоя работа как фотографа, это невероятные эмоции  легкости, веселья и кайфа</div>
+            <div class="reviews__img"><img src="img/reviews/natali.png" alt=""></div>            
+          </div>          
+        </div>
+        <div class="reviews__block">
+          <div class="reviews__content">
+            <div class="reviews__title">Диана</div>
+            <div class="reviews__text">Хочу сказать огромное спасибо . Не смотря на твой юный возраст, ты умеешь видеть картину целиком и создавать ее. Очень легко было с тобой работать а  фотки просто огонь. Пожелаю тебе дальнейшего развития и много клиентов</div>
+            <div class="reviews__img"><img src="img/reviews/diana.png" alt=""></div>            
+          </div>          
+        </div>
+        <div class="reviews__block">
+          <div class="reviews__content">
+            <div class="reviews__title">Владимир</div>
+            <div class="reviews__text">Выражаю огромную  благодарность за то, что ты делаешь! За то, что делаешь невероятно красивые фото. Эльдар не только делает красивые фото, но и умеет поддержать интересную беседу во время съемки</div>
+            <div class="reviews__img"><img src="img/reviews/vladimir.png" alt=""></div>            
+          </div>          
+        </div>
+      </div>
+    </div>
+    <div class="transition-clouds-bottom">
+      <img src="img/header/clouds.png" alt="clouds">
+    </div>
+  </section>
+
+
+
+
+  <section class="questions">
+    <div class="container">
+      <h2 class="section__title">Частые вопросы</h2>
+      <div class="accordion">
+        <label for="c1" class="questions__title">Что если я стесняюсь позировать?</label>
+        <input type="radio" name="accordion" id="c1" class="accordion">
+        <p class="questions__answer">Что если я стесняюсь позировать?</p>
+      
+        <label for="c2" class="questions__title">Нет образа и одежды</label>
+        <input type="radio" name="accordion" id="c2" class="accordion">
+        <p class="questions__answer">Нет образа и одежды</p>
+      
+        <label for="c3" class="questions__title">Я не фотогеничен(на)</label>
+        <input type="radio" name="accordion" id="c3" class="accordion">
+        <p class="questions__answer">Я не фотогеничен(на)</p>        
+
+        <label for="c4" class="questions__title">Будут ли дополнительные расходы?</label>
+        <input type="radio" name="accordion" id="c4" class="accordion">
+        <p class="questions__answer">Будут ли дополнительные расходы?</p>
+     
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="contacts">
+    <div class="transition-clouds-top">
+      <img src="img/advantages/clouds-top.png" alt="clouds">
+    </div>
+    <div class="container">
+      <h2 class="section__title">Мои контакты</h2>
+      <div class="contacts__wrap">
+        <div class="contacts__block">
+          <div class="contacts__img"><img src="img/contacts/phone.png" alt=""></div>
+          <div class="contacts__text">
+            <a href="">+7 (912) 084-72-25</a>
+          </div>
+        </div>
+        <div class="contacts__block">
+          <div class="contacts__img"><img class="contacts__email" src="img/contacts/email.png" alt=""></div>
+          <div class="contacts__text">
+            <a href="">eldargirg@gmail.com</a>
+          </div>
+        </div>
+        <div class="contacts__block">
+          <div class="contacts__img"><img src="img/contacts/instagram.png" alt=""></div>
+          <div class="contacts__text">
+            <a href="https://www.instagram.com/eldargirf.photo/">instagram.com/eldar</a>
+          </div>
+        </div>
+        <div class="contacts__block">
+          <div class="contacts__img"><img src="img/contacts/vk.png" alt=""></div>
+          <div class="contacts__text">
+            <a href="https://vk.com/pheldargirf">vk.com/eldar</a>
+          </div>
+        </div>
+        <div class="contacts__background">
+          <img src="img/contacts/phone-bg.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close"></button>
+      <div class="modal-dialog__title">Заполните данные</div>
+      <form action="mail.php" method="POST">
+        <input type="text" class="modal-dialog__input" name="name" placeholder="Ваше имя">
+        <input type="tell" class="modal-dialog__input" name="phone" placeholder="Ваш телефон">
+        <button type="submit" class="button maodal-dialog__button">Отправить</button>
+        <div class="form__policy">
+          <input id="radio-12" type="checkbox" class="form__radio" checked disabled>
+          <label for="radio-12" class="form__radio-label">
+            <p class="form__policy-text">Я принимаю условия <a id="polinicy__button">передачи информации</a></p>
+          </label>
+        </div>
+      </form>
+    </div> 
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
