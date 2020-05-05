@@ -1,0 +1,55 @@
+.team
+  color: #222
+  background-color: #f4f4f4
+  &__title
+    background: linear-gradient(to top, #00499c, #0078c2)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+  &__block
+    width: 50%
+    display: flex
+    min-width: 550px
+    margin-bottom: 20px
+  &__img
+    margin-right: 62px
+  &__content
+    margin: auto 0px auto 0px
+  &__subtitle
+    color: #006ab9
+    font-family: Gilroy
+    font-size: 26px
+    font-weight: bold
+    line-height: 43px
+    margin-bottom: 28px
+  &__text          
+    font-family: Roboto
+    font-size: 16px
+    font-weight: 500
+
+
+
+
+
+@media (max-width: 768px) 
+  .team
+    &__title
+    &__wrap
+    &__block
+    &__img
+      margin-right: 40px
+
+@media (max-width: 576px) 
+  .team
+    &__title
+    &__wrap
+    &__block
+      flex-direction: column
+      min-width: 100%
+      text-align: center
+    &__img
+      margin-right: 0px
+    &__subtitle
+      margin-bottom: 10px  
