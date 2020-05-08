@@ -1,0 +1,65 @@
+.reviews
+  background-image: url(../../img/advantages/advantages-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &__title
+    color: #fff
+  &__wrap
+    display: flex
+    justify-content: space-between
+  &__block
+    background-color: #fff
+    max-width: 305px
+    border-radius: 5px
+    padding-bottom: 40px
+    overflow: hidden
+    margin: auto
+  &__subtitle
+    font-family: Gilroy
+    font-size: 20px
+    font-weight: bold
+    line-height: 25px
+    color: #006ab9
+    margin: 23px 0px 15px 23px
+  &__text        
+    color: #222
+    font-family: Roboto
+    font-size: 15.5px
+    line-height: 17px  
+    margin-left: 23px
+
+
+.portfolio__arrows
+  max-width: 220px
+  margin: auto
+  display: flex
+  justify-content: space-between
+  margin-top: 68px  
+
+
+
+.owl-nav
+  margin: 40px auto 0px auto
+  max-width: 300px
+  display: flex
+
+
+
+@media (max-width: 768px) 
+  .reviews
+    &__title
+    &__wrap
+    &__block
+      max-width: 260px
+    &__subtitle
+    &__text        
+      max-width: 220px
+
+
+
+@media (max-width: 576px) 
+  .owl-nav
+    max-width: 200px
+    & button
+      & img
+        width: 40px
