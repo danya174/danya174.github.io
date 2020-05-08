@@ -1,0 +1,205 @@
+.header
+  background-image: linear-gradient( -204deg, rgb(22,25,91) 0%, rgb(7,7,48) 33%, rgb(2,3,33) 64%, rgb(7,9,46) 100%)
+  color: #fff
+
+
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 25px 0px 50px
+  background-image: url(../../img/header/logo-bg.png)
+  background-repeat: no-repeat
+  &__logo  
+  &__navigation  
+    display: flex
+    justify-content: space-between
+    font-family: Roboto
+    font-size: 14.5px
+    line-height: 15.5px
+    text-decoration: none
+    min-width: 330px
+    & a
+      display: inline-block
+      line-height: 1.5
+      text-decoration: none
+      cursor: pointer
+      &:visited
+        color: unset
+      &:hover
+        color: #006ab9
+      &::after
+        background-image: linear-gradient(to top, #00499c, #0078c2)
+        display: block
+        content: ""
+        height: 2px
+        width: 0%
+        -webkit-transition: width .1s ease-in-out
+        -moz--transition: width .1s ease-in-out
+        transition: width .1s ease-in-out
+  &__mobile
+  &__phone 
+    font-family: Roboto
+    font-size: 20.5px
+    font-weight: bold
+    line-height: 28.5px   
+    color: #fff
+    & span
+      color: #006ab9
+
+ul a:hover:after, ul li:focus:after 
+  width: 50%
+
+.hero
+  display: flex
+  background: url(../../img/header/man.png)
+  background-repeat: no-repeat
+  background-position: right bottom
+  &-content
+    margin-top: 30px
+    &__offer
+      &_title
+        font-family: GothamSSm
+        font-size: 40px
+        font-weight: 900
+        line-height: 43px
+        margin-bottom: 30px
+        max-width: 692px
+        & span
+          color: #006ab9
+      &_subtitle  
+        font-family: Roboto
+        font-size: 22px
+        font-weight: 300
+        line-height: 28px   
+        margin-bottom: 35px
+        max-width: 520px 
+    &__video
+      display: flex
+      align-items: center
+      &_button
+        margin-right: 17px
+        cursor: pointer
+      &_text
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 300
+        line-height: 20px  
+        font-style: italic
+        max-width: 231px  
+    &__button
+      position: relative
+      width: 400px
+  &__button
+    border: none
+    outline: none
+    background: none   
+    font-family: HelveticaNeueCyr
+    font-size: 17px
+    font-weight: 500
+    line-height: 18px
+    letter-spacing: 0.34px    
+    color: #fff
+    background-image: url(../../img/header/button.png)   
+    background-repeat: no-repeat
+    width: 425px
+    height: 173px
+    margin: 0px 0px 40px -45px
+    &:after
+      background: url(../../img/header/button-bg.png)
+      background-repeat: no-repeat
+      content: ""
+      z-index: 3
+      position: absolute
+      top: 0px
+      right: 35px
+      width: 129px
+      height: 132px
+      animation: top-bot-top 2s ease-in-out infinite
+      -webkit-animation: top-bot-top 2s ease-in-out infinite
+    &:hover
+      background-image: url(../../img/header/button-bg-hover.png)
+
+
+
+
+
+
+
+@media (max-width: 992px) 
+  .hero
+    &-content
+      margin-top: 30px
+      &__offer
+        &_title
+          max-width: 500px
+          font-size: 30px
+        &_subtitle
+          font-size: 20px
+          line-height: 26px
+          max-width: 500px  
+
+  .navbar
+    &__logo  
+    &__navigation  
+      font-size: 13.5px
+      min-width: 300px
+    &__phone
+      font-size: 17.5px  
+
+
+
+@media (max-width: 768px) 
+  .logo
+    img
+      width: 170px
+  nav
+    display: none
+
+@media (max-width: 576px) 
+  .logo
+    img
+      width: 120px
+
+  .navbar
+    background-size: 200px
+    &__phone 
+      font-size: 13px
+      & span
+
+  .hero
+    background: unset
+    &-content
+      &__offer
+        &_title
+          width: 93%
+          line-height: 26px
+          font-size: 22px
+        &_subtitle  
+          font-size: 17px
+          line-height: 20px
+          width: 90%
+      &__video
+        &_button
+          img
+            width: 80px
+        &_text 
+          max-width: 180px
+          font-size: 15px
+      &__button
+        width: 300px
+    &__button
+      font-size: 13px
+      background-size: 300px  
+      height: 123px
+      width: 300px
+      &:after
+        top: 25px
+        right: 0px
+        background-size: 70px
+
+
+   
+
+
+  
