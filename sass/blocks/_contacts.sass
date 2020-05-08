@@ -1,0 +1,42 @@
+.contacts
+  position: relative
+  color: #fff
+  background-image: url(../../img/advantages/advantages-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &__wrap
+  &__item
+    display: flex
+    margin-bottom: 35px
+  &__img
+    margin-right: 20px  
+  &__text
+    font-family: Roboto
+    font-size: 22px
+    font-weight: 300  
+    max-width: 332px
+
+.map
+  width: 50%
+  position: absolute
+  right: 0
+  top: 0
+
+@media (max-width: 768px) 
+  .map
+    width: 100%
+    position: unset
+  .contacts
+    padding: 75px 0px 0px 0px  
+    &__button
+      margin-bottom: 45px
+
+@media (max-width: 576px) 
+  .contacts
+    &__text
+      font-size: 15px
+      margin-top: 5px
+
+  .map
+    max-height: 450px
+    overflow: hidden
